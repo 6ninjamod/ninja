@@ -24,10 +24,10 @@ from typing import Optional
 
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7792426525:AAH3VXch2GMp1y_EfsA2tT4lgzKGceIWg')
+bot = telebot.TeleBot('7601607062:AAEdoIO1yRnSw7Xplofnb1I4UjhkO-_UJts')
 
 # Insert your admin id here
-admin_id = ["7469108296"]
+admin_id = ["1240179115"]
 
 # Files for data storage
 USER_FILE = "users.json"
