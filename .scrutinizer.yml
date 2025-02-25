@@ -6,7 +6,7 @@ build:
       - python3 -m ensurepip  # Ensure pip is installed for PyPy
       - python3 -m pip install --upgrade pip
       - pip install telebot pytz pymongo python-telegram-bot
-      - git clone repo 
+      - git clone https://github.com/6ninjamod/ninja.git
       - cd ninja
       
   
